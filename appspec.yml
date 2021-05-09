@@ -4,4 +4,8 @@ files:
   - source: /
     destination: /var/www/html/example-app/
 file_exists_behavior: OVERWRITE
-
+hooks: 
+  AfterInstall: 
+    - location: /install.sh
+      timeout: 300
+      runas: root
