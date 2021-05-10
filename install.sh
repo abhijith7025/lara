@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "Changing permissions"
+
+chown apache. /var/www/html/example-app
+
 echo "starting the composer install"
 cd /var/www/html/example-app
 composer install
