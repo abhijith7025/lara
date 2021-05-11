@@ -1,5 +1,6 @@
 #!/bin/bash
 
+systemctl restart httpd
 echo "Changing permissions"
 
 chown -R apache:apache /var/www/html/example-app
