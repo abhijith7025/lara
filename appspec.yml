@@ -3,6 +3,8 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/example-app/
+  - source: /laravel.conf
+    destination: /etc/httpd/conf.d/
 file_exists_behavior: OVERWRITE
 hooks: 
   AfterInstall: 
