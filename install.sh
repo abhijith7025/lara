@@ -13,6 +13,7 @@ echo "Generating keys"
 php artisan key:generate
 
 echo "Migrating DB"
+php artisan session:table
 php artisan migrate
 
 echo "Doing something"
